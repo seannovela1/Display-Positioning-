@@ -28,8 +28,43 @@ img {
     padding: 0;
     box-sizing: border-box;
 }
- 
-/* Layout Styles */
-body {
-    font-family: Arial, sans-serif; /* Fallback font for body */
+
+header, footer{ 
+	background-color:#333;/*dark background for header and footer*/
+	color: white;/*white text color*/
+	text-align: center;/*centered text*/
+	padding:1em 0; /* padding for header and footer*/
+}
+
+.container{
+display:flex;/*flexbox for layout*/
+flex-direction:column;/*column layout*/
+min-height: 100vh;/*full height*/
+}
+
+.main-content {
+	display: flex;/* flexbox for main content*/
+	flex:1;/*take remaining space*/
+}
+
+.column{
+	flex:1;/*equal width columns*/
+	padding:1em;/*padding for columns*/
+}
+
+.column:nth-child(1){
+	background-color:#f4f4f4;/*light gray for first column*/
+}
+
+.column:nth-child(2){
+	background-color: #ddd;/*slightly darker gray for second column*/
+}
+
+.column:nth-child(3){
+	background-color: #f4f4f4;/*light gray for third column*/
+}
+
+/*Footer styles*/
+footer{
+	margin-top:auto;/*push footer to the bottom*/
 }
