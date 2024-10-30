@@ -12,37 +12,24 @@ body {
 }
 
 h1, h2, h3 {
-	font-family: 'Rakkas', cursive;
+	font-family: 'Rakkas', cursive;  /* Font for headings */
 }
-
-aside {
-	
-}
-
-footer {
-
-}
-
-header {
-
-}
-
 img {
-	max-width: 75%;
+    max-width: 75%; /* Responsive images */
 }
-
-main {
-
-}
-
-nav {
-
-}
-
+ 
 #copyright {
-	font-size: 80%;
+    font-size: 80%; /* Smaller font for copyright */
 }
-
-#main-container {
-
+ 
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+/* Layout Styles */
+body {
+    font-family: Arial, sans-serif; /* Fallback font for body */
 }
